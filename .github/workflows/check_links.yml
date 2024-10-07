@@ -44,7 +44,7 @@ jobs:
         cd static
         git init
         git add .
-        git commit -m "⏱️GitHub Action每日定时更新"
+        git commit -m "⏱️自动更新"
         git push --force https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:page
     
     - name: Delete Workflow Runs
